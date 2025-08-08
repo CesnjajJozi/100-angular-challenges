@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-fieldset',
-  templateUrl: './fieldset.component.html',
-  styleUrls: ['./fieldset.component.scss']
+    selector: 'app-fieldset',
+    templateUrl: './fieldset.component.html',
+    styleUrls: ['./fieldset.component.scss'],
+    standalone: false
 })
 export class FieldsetComponent {
   @Input() legend = '';

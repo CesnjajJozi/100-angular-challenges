@@ -20,7 +20,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     BrowserModule,
     BrowserAnimationsModule,
     SharedModule,
-    RouterModule.forRoot(APP_ROUTES)
+    RouterModule.forRoot(APP_ROUTES, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

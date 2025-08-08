@@ -1,7 +1,8 @@
 import { Directive, ElementRef, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appScale]'
+    selector: '[appScale]',
+    standalone: false
 })
 export class ScaleDirective {
 

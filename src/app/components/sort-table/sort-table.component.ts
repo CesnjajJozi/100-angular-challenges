@@ -1,35 +1,35 @@
-import { Component, Input } from '@angular/core';
-import { isDate } from 'util';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-sort-table',
-  templateUrl: './sort-table.component.html',
-  styleUrls: ['./sort-table.component.scss']
+    selector: "app-sort-table",
+    templateUrl: "./sort-table.component.html",
+    styleUrls: ["./sort-table.component.scss"],
+    standalone: false
 })
 export class SortTableComponent {
   @Input() public tableData: any[] = [
-    { first: 'Dylan 1', dob: '10/25/88', age: 32, living: true },
-    { first: 'Dylan 2', dob: '10/25/90', age: 31, living: true },
-    { first: 'Dylan 3', dob: '10/25/95', age: 20, living: false },
-    { first: 'Dylan 4', dob: '10/25/87', age: 35, living: true },
+    { first: "Dylan 1", dob: "10/25/88", age: 32, living: true },
+    { first: "Dylan 2", dob: "10/25/90", age: 31, living: true },
+    { first: "Dylan 3", dob: "10/25/95", age: 20, living: false },
+    { first: "Dylan 4", dob: "10/25/87", age: 35, living: true },
   ];
   public sortDirection = true;
 
-  public sort(headerData: { key: string, value: any }): void {
+  public sort(headerData: { key: string; value: any }): void {
     const { key, value } = headerData;
     this.sortDirection = !this.sortDirection;
 
     switch (true) {
-      case typeof value === 'boolean':
+      case typeof value === "boolean":
         this.sortBoolean(key);
         break;
-      case typeof value === 'number':
+      case typeof value === "number":
         this.sortNumber(key);
         break;
       case this.isDate(value):
         this.sortDate(key);
         break;
-      case typeof value === 'string':
+      case typeof value === "string":
         this.sortString(key);
         break;
     }
@@ -44,9 +44,13 @@ export class SortTableComponent {
   private sortDate(key: any): void {
     this.tableData.sort((value1: any, value2: any) => {
       if (this.sortDirection) {
-        return new Date(value1[key]).getTime() - new Date(value2[key]).getTime();
+        return (
+          new Date(value1[key]).getTime() - new Date(value2[key]).getTime()
+        );
       } else {
-        return new Date(value2[key]).getTime() - new Date(value1[key]).getTime();
+        return (
+          new Date(value2[key]).getTime() - new Date(value1[key]).getTime()
+        );
       }
     });
   }

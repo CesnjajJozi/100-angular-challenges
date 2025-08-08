@@ -1,6 +1,6 @@
 import { FormDirtyGuard } from './form-dirty.guard';
 import { IFormDirty } from './form-dirty.interface';
-import { FormGroup, FormControl } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormControl } from '@angular/forms';
 
 describe(FormDirtyGuard.name, () => {
   it('exists', () => {
@@ -15,9 +15,9 @@ describe(FormDirtyGuard.name, () => {
     beforeEach(() => {
       guard = new FormDirtyGuard();
       component = {
-        form: new FormGroup(
+        form: new UntypedFormGroup(
           {
-            firstName: new FormControl('', [])
+            firstName: new UntypedFormControl('', [])
           }
         )
       };

@@ -1,4 +1,6 @@
-@import 'src/styles';
+@use "./../../../styles/variables" as *;
+@use "./../../../styles/colors" as *;
+@use "./../../../styles/mixins" as *;
 
 .counter-container {
   display: flex;
@@ -11,7 +13,7 @@
   }
 
   // Firefox
-  input[type=number] {
+  input[type="number"] {
     padding: 5px;
     -moz-appearance: textfield;
   }

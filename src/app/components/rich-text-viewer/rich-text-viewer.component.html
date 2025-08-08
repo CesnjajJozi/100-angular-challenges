@@ -1,1 +1,3 @@
-<span *ngIf="validHtml" [innerHtml]="validHtml"></span>
+@if (validHtml) {
+  <span [innerHtml]="validHtml"></span>
+}

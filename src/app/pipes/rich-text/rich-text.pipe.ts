@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { htmlRegex } from 'src/app/components/rich-text-viewer/html-regex.data';
 
 @Pipe({
-  name: 'richText'
+    name: 'richText',
+    standalone: false
 })
 export class RichTextPipe implements PipeTransform {
 

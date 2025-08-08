@@ -9,18 +9,22 @@
             <input type="text" placeholder="Your Name" formControlName="name">
             <i class="fas fa-user"></i>
           </div>
-          <small class="error" *ngIf="form.controls.name.errors && form.controls.name.touched">
-            Name is too short!
-          </small>
+          @if (form.controls.name.errors && form.controls.name.touched) {
+            <small class="error">
+              Name is too short!
+            </small>
+          }
         </div>
         <div>
           <div class="email" [class.error]="form.controls.email.errors && form.controls.email.touched">
             <input type="email" placeholder="Your Email" formControlName="email">
             <i class="fas fa-envelope"></i>
           </div>
-          <small class="error" *ngIf="form.controls.email.errors && form.controls.email.touched">
-            Email is invalid!
-          </small>
+          @if (form.controls.email.errors && form.controls.email.touched) {
+            <small class="error">
+              Email is invalid!
+            </small>
+          }
         </div>
 
         <div class="message">

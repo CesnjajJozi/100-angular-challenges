@@ -1,4 +1,6 @@
 <div class="popup-container" (click)="show()">
   <ng-content></ng-content>
-  <span class="popup-text" [@fadeInOutAnimation] *ngIf="isShown">{{message}}</span>
+  @if (isShown) {
+    <span class="popup-text" [@fadeInOutAnimation]>{{message}}</span>
+  }
 </div>

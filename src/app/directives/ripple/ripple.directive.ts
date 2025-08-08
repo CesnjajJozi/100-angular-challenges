@@ -1,7 +1,8 @@
 import { Directive, Input, ElementRef, Renderer2, HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appRipple]'
+    selector: '[appRipple]',
+    standalone: false
 })
 export class RippleDirective {
   @Input() public appRipple = 'ripple';

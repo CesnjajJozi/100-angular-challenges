@@ -2,7 +2,8 @@ import { Directive, Input, HostListener, Inject } from '@angular/core';
 import { SnackbarService } from '../../services/snackbar/snackbar.service';
 
 @Directive({
-  selector: '[appCopy]'
+    selector: '[appCopy]',
+    standalone: false
 })
 export class CopyDirective {
   @Input() appCopy = '';

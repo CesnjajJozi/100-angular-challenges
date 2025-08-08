@@ -1,7 +1,8 @@
 import { Directive, HostBinding, Input, ElementRef, AfterViewInit, Inject, OnDestroy } from '@angular/core';
 
 @Directive({
-  selector: 'img[appLazyLoadImage]'
+    selector: 'img[appLazyLoadImage]',
+    standalone: false
 })
 export class LazyLoadImageDirective implements AfterViewInit, OnDestroy {
   @HostBinding('attr.src') srcAttribute = null;

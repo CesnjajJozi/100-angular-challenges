@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pipe-documentation',
-  templateUrl: './pipe-documentation.component.html',
-  styleUrls: ['./pipe-documentation.component.scss']
+    selector: 'app-pipe-documentation',
+    templateUrl: './pipe-documentation.component.html',
+    styleUrls: ['./pipe-documentation.component.scss'],
+    standalone: false
 })
 export class PipeDocumentationComponent {
   public flattenData = [1, 2, [3], [4, [5, 6, [7]]]];

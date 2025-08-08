@@ -1,14 +1,22 @@
-<table *ngIf="tableData && tableData.length">
+@if (tableData && tableData.length) {
+<table>
   <thead>
     <tr>
-      <th *ngFor="let header of tableData[0] | keyvalue" (click)="headerSelection(header.key, header.value)">
-        {{header.key}}</th>
+      @for (header of tableData[0] | keyvalue; track header) {
+      <th (click)="headerSelection(header.key, header.value)">
+        {{ header.key }}
+      </th>
+      }
     </tr>
   </thead>
-
   <tbody>
-    <tr *ngFor="let row of tableData">
-      <td *ngFor="let data of row | keyvalue">{{data.value}}</td>
+    @for (row of tableData; track row) {
+    <tr>
+      @for (data of row | keyvalue; track data) {
+      <td>{{ data.value }}</td>
+      }
     </tr>
+    }
   </tbody>
 </table>
+}

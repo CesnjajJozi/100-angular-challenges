@@ -11,9 +11,10 @@ import { PillType } from '../pill/pill-type.enum';
 import { jsonExample } from './json-example';
 
 @Component({
-  selector: 'app-component-documentation',
-  templateUrl: './component-documentation.component.html',
-  styleUrls: ['./component-documentation.component.scss'],
+    selector: 'app-component-documentation',
+    templateUrl: './component-documentation.component.html',
+    styleUrls: ['./component-documentation.component.scss'],
+    standalone: false
 })
 export class ComponentDocumentationComponent {
   public accordionItems: AccordionItem[] = [

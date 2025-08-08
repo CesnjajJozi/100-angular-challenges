@@ -2,9 +2,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { PillType } from './pill-type.enum';
 
 @Component({
-  selector: 'app-pill',
-  templateUrl: './pill.component.html',
-  styleUrls: ['./pill.component.scss']
+    selector: 'app-pill',
+    templateUrl: './pill.component.html',
+    styleUrls: ['./pill.component.scss'],
+    standalone: false
 })
 export class PillComponent {
   @Input() public type: PillType = PillType.Info;

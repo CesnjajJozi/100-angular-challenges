@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-countdown-timer',
-  templateUrl: './countdown-timer.component.html',
-  styleUrls: ['./countdown-timer.component.scss']
+    selector: 'app-countdown-timer',
+    templateUrl: './countdown-timer.component.html',
+    styleUrls: ['./countdown-timer.component.scss'],
+    standalone: false
 })
 export class CountdownTimerComponent {
   private countDownTime: number;

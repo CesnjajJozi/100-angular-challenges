@@ -1,4 +1,6 @@
 <div class="button-toggle-container">
-  <button *ngFor="let option of options" [class.active]="option.isActive"
+  @for (option of options; track option) {
+    <button [class.active]="option.isActive"
     (click)="selected(option)">{{option.title}}</button>
+  }
 </div>

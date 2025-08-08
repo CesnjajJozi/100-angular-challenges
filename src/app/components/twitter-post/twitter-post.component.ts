@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-twitter-post',
-  templateUrl: './twitter-post.component.html',
-  styleUrls: ['./twitter-post.component.scss']
+    selector: 'app-twitter-post',
+    templateUrl: './twitter-post.component.html',
+    styleUrls: ['./twitter-post.component.scss'],
+    standalone: false
 })
 export class TwitterPostComponent {
   @Input() public baseHref = 'https://www.DylanIsrael.com';

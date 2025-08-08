@@ -1,6 +1,6 @@
-@import 'src/styles';
-
-
+@use "./../../../styles/variables" as *;
+@use "./../../../styles/colors" as *;
+@use "./../../../styles/mixins" as *;
 
 .email-form-container {
   display: grid;
@@ -17,13 +17,14 @@
       .email-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 'name email'
-          'message message'
-          '. submit';
+        grid-template-areas:
+          "name email"
+          "message message"
+          ". submit";
         grid-gap: 20px;
 
-        input[type=text],
-        input[type=email],
+        input[type="text"],
+        input[type="email"],
         textarea {
           padding-left: 33px;
         }
@@ -76,7 +77,7 @@
         input,
         textarea {
           &:focus {
-            &+i {
+            & + i {
               transition: all 0.3s;
               color: $blue;
             }

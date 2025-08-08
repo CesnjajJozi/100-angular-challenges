@@ -4,9 +4,10 @@ import { delay } from 'rxjs/operators';
 import { SnackbarService } from 'src/app/services/snackbar/snackbar.service';
 
 @Component({
-  selector: 'app-snackbar',
-  templateUrl: './snackbar.component.html',
-  styleUrls: ['./snackbar.component.scss']
+    selector: 'app-snackbar',
+    templateUrl: './snackbar.component.html',
+    styleUrls: ['./snackbar.component.scss'],
+    standalone: false
 })
 export class SnackbarComponent implements OnInit {
   @Input() public message = '';

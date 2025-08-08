@@ -1,4 +1,6 @@
-@import '../../../styles';
+@use "./../../../styles/variables" as *;
+@use "./../../../styles/colors" as *;
+@use "./../../../styles/mixins" as *;
 
 .tabs {
   display: flex;

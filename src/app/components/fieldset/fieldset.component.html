@@ -3,7 +3,9 @@
     <i [ngClass]="['fas', isOpen ? 'fa-minus' : 'fa-plus']"></i> {{legend}}
   </legend>
 
-  <div *ngIf="isOpen">
-    <ng-content></ng-content>
-  </div>
+  @if (isOpen) {
+    <div>
+      <ng-content></ng-content>
+    </div>
+  }
 </fieldset>

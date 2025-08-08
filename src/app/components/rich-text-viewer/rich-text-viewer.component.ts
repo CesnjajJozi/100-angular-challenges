@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { htmlRegex } from './html-regex.data';
 
 @Component({
-  selector: 'app-rich-text-viewer',
-  templateUrl: './rich-text-viewer.component.html',
-  styleUrls: ['./rich-text-viewer.component.scss']
+    selector: 'app-rich-text-viewer',
+    templateUrl: './rich-text-viewer.component.html',
+    styleUrls: ['./rich-text-viewer.component.scss'],
+    standalone: false
 })
 export class RichTextViewerComponent {
   public validHtml = '';

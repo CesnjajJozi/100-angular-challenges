@@ -8,9 +8,10 @@ import { ActivatedRoute } from '@angular/router';
 import { map, mergeMap } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-service-documentation',
-  templateUrl: './service-documentation.component.html',
-  styleUrls: ['./service-documentation.component.scss']
+    selector: 'app-service-documentation',
+    templateUrl: './service-documentation.component.html',
+    styleUrls: ['./service-documentation.component.scss'],
+    standalone: false
 })
 export class ServiceDocumentationComponent implements OnInit {
   public user = new User();

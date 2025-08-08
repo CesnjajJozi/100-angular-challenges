@@ -3,9 +3,10 @@ import { RibbonType } from './ribbon-type';
 import { RibbonLocation } from './ribbon-location.enum';
 
 @Component({
-  selector: 'app-ribbon',
-  templateUrl: './ribbon.component.html',
-  styleUrls: ['./ribbon.component.scss']
+    selector: 'app-ribbon',
+    templateUrl: './ribbon.component.html',
+    styleUrls: ['./ribbon.component.scss'],
+    standalone: false
 })
 export class RibbonComponent {
   @Input() public content = '';

@@ -1,6 +1,8 @@
 <div class="card-container">
   <div class="header">
-    <i *ngIf="iconClasses" [class]="iconClasses"></i>
+    @if (iconClasses) {
+      <i [class]="iconClasses"></i>
+    }
     <div class="title">
       <h5>{{title}}</h5>
       <h6>{{subTitle}}</h6>

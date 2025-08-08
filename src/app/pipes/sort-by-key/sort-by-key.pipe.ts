@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'sortByKey'
+    name: 'sortByKey',
+    standalone: false
 })
 export class SortByKeyPipe implements PipeTransform {
   public transform(value: { [key: string]: string }[], key: string, isAscending = true): { [key: string]: string }[] {

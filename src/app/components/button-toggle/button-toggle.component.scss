@@ -1,4 +1,6 @@
-@import 'src/styles';
+@use "../../../styles/variables" as *;
+@use "../../../styles/colors" as *;
+@use "../../../styles/mixins" as *;
 
 .button-toggle-container {
   display: flex;

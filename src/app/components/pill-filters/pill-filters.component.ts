@@ -1,9 +1,10 @@
 import { Component, Input, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-pill-filters',
-  templateUrl: './pill-filters.component.html',
-  styleUrls: ['./pill-filters.component.scss']
+    selector: 'app-pill-filters',
+    templateUrl: './pill-filters.component.html',
+    styleUrls: ['./pill-filters.component.scss'],
+    standalone: false
 })
 export class PillFiltersComponent {
   private pillLabels: string[];

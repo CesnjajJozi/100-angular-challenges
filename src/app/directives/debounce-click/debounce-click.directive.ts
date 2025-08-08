@@ -4,8 +4,9 @@ import { debounceTime } from 'rxjs/internal/operators/debounceTime';
 
 @Directive(
   {
-    selector: '[appDebounceClick]'
-  }
+    selector: '[appDebounceClick]',
+    standalone: false
+}
 )
 export class DebounceClickDirective implements OnInit, OnDestroy {
   @Output() public debounceClick = new EventEmitter();

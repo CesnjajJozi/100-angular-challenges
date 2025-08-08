@@ -5,9 +5,11 @@
     </button>
   </li>
 
-  <li *ngFor="let page of pages">
-    <button (click)="setPage(page)" [class.current-page]="currentPage === page">{{page}}</button>
-  </li>
+  @for (page of pages; track page) {
+    <li>
+      <button (click)="setPage(page)" [class.current-page]="currentPage === page">{{page}}</button>
+    </li>
+  }
 
   <li>
     <button (click)="setPage(currentPage + step)" [disabled]="isNextDisabled">

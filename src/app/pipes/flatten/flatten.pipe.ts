@@ -1,8 +1,9 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'appFlatten',
-  pure: false
+    name: 'appFlatten',
+    pure: false,
+    standalone: false
 })
 export class FlattenPipe implements PipeTransform {
   public transform(values: any[]): any[] {

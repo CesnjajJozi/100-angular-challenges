@@ -1,10 +1,10 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { ThrowStmt } from '@angular/compiler';
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
-  selector: 'app-paging',
-  templateUrl: './paging.component.html',
-  styleUrls: ['./paging.component.scss']
+    selector: "app-paging",
+    templateUrl: "./paging.component.html",
+    styleUrls: ["./paging.component.scss"],
+    standalone: false
 })
 export class PagingComponent {
   @Input() public totalItems = 1;
@@ -61,5 +61,4 @@ export class PagingComponent {
     this.currentPage = page;
     this.pageChange.emit(page);
   }
-
 }

@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'creditCardFormatter'
+    name: 'creditCardFormatter',
+    standalone: false
 })
 export class CreditCardFormatterPipe implements PipeTransform {
 

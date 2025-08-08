@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-email-form',
-  templateUrl: './email-form.component.html',
-  styleUrls: ['./email-form.component.scss']
+    selector: 'app-email-form',
+    templateUrl: './email-form.component.html',
+    styleUrls: ['./email-form.component.scss'],
+    standalone: false
 })
 export class EmailFormComponent {
-  public form: FormGroup;
+  public form: UntypedFormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: UntypedFormBuilder) {
     this.initializeForm();
   }
 

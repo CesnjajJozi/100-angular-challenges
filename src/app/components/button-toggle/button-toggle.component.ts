@@ -2,9 +2,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { ButtonMeta } from './button-meta.model';
 
 @Component({
-  selector: 'app-button-toggle',
-  templateUrl: './button-toggle.component.html',
-  styleUrls: ['./button-toggle.component.scss']
+    selector: 'app-button-toggle',
+    templateUrl: './button-toggle.component.html',
+    styleUrls: ['./button-toggle.component.scss'],
+    standalone: false
 })
 export class ButtonToggleComponent {
   @Input() options: ButtonMeta[] = [];

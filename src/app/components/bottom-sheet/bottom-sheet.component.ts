@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-bottom-sheet',
-  templateUrl: './bottom-sheet.component.html',
-  styleUrls: ['./bottom-sheet.component.scss']
+    selector: 'app-bottom-sheet',
+    templateUrl: './bottom-sheet.component.html',
+    styleUrls: ['./bottom-sheet.component.scss'],
+    standalone: false
 })
 export class BottomSheetComponent {
   public isShown = false;

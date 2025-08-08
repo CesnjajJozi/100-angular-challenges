@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-directive-documentation',
-  templateUrl: './directive-documentation.component.html',
-  styleUrls: ['./directive-documentation.component.scss']
+    selector: 'app-directive-documentation',
+    templateUrl: './directive-documentation.component.html',
+    styleUrls: ['./directive-documentation.component.scss'],
+    standalone: false
 })
 export class DirectiveDocumentationComponent {
   public log() {

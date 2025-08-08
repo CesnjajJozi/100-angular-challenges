@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-radio-selection',
-  templateUrl: './radio-selection.component.html',
-  styleUrls: ['./radio-selection.component.scss']
+    selector: 'app-radio-selection',
+    templateUrl: './radio-selection.component.html',
+    styleUrls: ['./radio-selection.component.scss'],
+    standalone: false
 })
 export class RadioSelectionComponent implements OnInit {
 

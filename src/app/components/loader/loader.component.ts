@@ -2,9 +2,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { LoaderType } from './models/loader-type.enum';
 
 @Component({
-  selector: 'app-loader',
-  templateUrl: './loader.component.html',
-  styleUrls: ['./loader.component.scss']
+    selector: 'app-loader',
+    templateUrl: './loader.component.html',
+    styleUrls: ['./loader.component.scss'],
+    standalone: false
 })
 export class LoaderComponent implements OnInit {
   @Input() public isLoading = false;

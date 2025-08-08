@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-linkedin-post',
-  templateUrl: './linkedin-post.component.html',
-  styleUrls: ['./linkedin-post.component.scss']
+    selector: 'app-linkedin-post',
+    templateUrl: './linkedin-post.component.html',
+    styleUrls: ['./linkedin-post.component.scss'],
+    standalone: false
 })
 export class LinkedinPostComponent {
 

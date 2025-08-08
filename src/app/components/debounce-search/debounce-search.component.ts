@@ -5,9 +5,10 @@ import { distinctUntilChanged } from 'rxjs/operators';
 
 
 @Component({
-  selector: 'app-debounce-search',
-  templateUrl: './debounce-search.component.html',
-  styleUrls: ['./debounce-search.component.scss']
+    selector: 'app-debounce-search',
+    templateUrl: './debounce-search.component.html',
+    styleUrls: ['./debounce-search.component.scss'],
+    standalone: false
 })
 export class DebounceSearchComponent {
   @Input() public searchTerm = '';

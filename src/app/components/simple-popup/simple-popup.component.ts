@@ -4,10 +4,11 @@ import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-simple-popup',
-  templateUrl: './simple-popup.component.html',
-  styleUrls: ['./simple-popup.component.scss'],
-  animations: [fadeInOutAnimation]
+    selector: 'app-simple-popup',
+    templateUrl: './simple-popup.component.html',
+    styleUrls: ['./simple-popup.component.scss'],
+    animations: [fadeInOutAnimation],
+    standalone: false
 })
 export class SimplePopupComponent {
   @Input() public message = '';

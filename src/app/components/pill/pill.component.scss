@@ -1,4 +1,6 @@
-@import 'src/styles';
+@use "./../../../styles/variables" as *;
+@use "./../../../styles/colors" as *;
+@use "./../../../styles/mixins" as *;
 
 .pill-container {
   padding: 5px 15px;
@@ -26,5 +28,4 @@
   &.warning {
     background-color: $orange;
   }
-
 }
